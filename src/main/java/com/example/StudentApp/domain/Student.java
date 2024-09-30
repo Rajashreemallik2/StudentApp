@@ -15,6 +15,7 @@ public class Student {
     @Column(name = "name", nullable = false)
     private String name;
 
+
     @Column(name = "rollNo")
     private String rollNo;
 
