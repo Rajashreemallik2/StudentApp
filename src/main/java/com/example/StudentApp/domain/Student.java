@@ -2,8 +2,9 @@ package com.example.StudentApp.domain;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
 @Entity
 @Table(name = "student")
 public class Student {
@@ -25,4 +26,39 @@ public class Student {
     @Column(name = "city")
     private String city;
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setRollNo(String rollNo) {
+        this.rollNo = rollNo;
+    }
+
+    public void setDepartment(String department) {
+        Department = department;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getRollNo() {
+        return rollNo;
+    }
+
+    public String getDepartment() {
+        return Department;
+    }
+
+    public String getCity() {
+        return city;
+    }
 }
